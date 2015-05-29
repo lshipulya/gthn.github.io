@@ -1,20 +1,31 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>soondoggie.jpg</title>
+    <title>Adam Lewes</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
     <style type="text/css">
-      img {
+      body {
+        background: #6b6b6b;
+      }
+
+      div.lewes {
         position: absolute;
+        width: 75vw;
+        height: calc(75vw * 0.314629259);
+        background-image: url("lewes.png");
+        background-image: url("lewes.svg");
+        background-size: 100% 100%;
+        background-size: cover;
         top: 50%;
         left: 50%;
-        width: 620px;
-        height: 415px;
-        margin-left: -310px;
-        margin-top: -207.5px;
+        transform: translate(-50%, -50%);
       }
     </style>
+
   </head>
   <body>
-    <img src="soondoggie.jpg">
+    <div class="lewes"></div>
   </body>
 </html>
