@@ -7,35 +7,25 @@
 
     <style type="text/css">
       body {
-        background: #6b6b6b;
-        background-size: cover;
-      }
-
-      div.lewes {
-        position: absolute;
-        width: 75vw;
-        height: calc(75vw * 0.314629259);
+        background: #EFEFEF;
         background-image: url("lewes.png");
         background-image: url("lewes.svg");
-        background-size: 100% 100%;
-        background-size: cover;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        background-size: 75vw calc(75vw * 0.314629259);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
       }
     </style>
 
     <script type="text/javascript">
       $(function() {
         cheet('b a r k', function () {
-          $('div.lewes').css('opacity', '0.5');
           $('body').css('background-image', 'url(\'http://i.imgur.com/5eI6Ltz.gif\')');
+          $('body').css('background-size', 'cover');
         });
       });
     </script>
-
   </head>
   <body>
-    <div class="lewes"></div>
   </body>
 </html>
