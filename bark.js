@@ -58,14 +58,14 @@ $(function() {
     $('#bark').css('display', 'none');
     $('body').css('background-image', 'url(\'http://i.imgur.com/oYwwaVV.jpg\')');
     $('body').css('background-size', 'cover');
-    console.log('%c HOWWWWWWWWWLLLLLLLL', "color: red; font-size: 4em; font-family: 'Comic Sans MS', cursive;");
+    console.log('%c GRRRRRRRRRRR', "color: red; font-size: 4em; font-family: 'Comic Sans MS', cursive;");
   });
 
   cheet('g r o w l', function () {
     $('#bark').css('display', 'none');
     $('body').css('background-image', 'url(\'http://i.imgur.com/bI9C4qJ.jpg\')');
     $('body').css('background-size', 'cover');
-    console.log('%c HOWWWWWWWWWLLLLLLLL', "color: red; font-size: 4em; font-family: 'Comic Sans MS', cursive;");
+    console.log('%c GRRRRRRRRRRR', "color: red; font-size: 4em; font-family: 'Comic Sans MS', cursive;");
   });
 
   /* Cats */
