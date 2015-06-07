@@ -1,0 +1,35 @@
+body {
+  background: #EFEFEF;
+  background-image: url("lewes.png");
+  background-image: url("lewes.svg");
+  background-size: 75vw calc(75vw * 0.314629259);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  margin: 0;
+  padding: 0;
+}
+
+#bark {
+  opacity: 0;
+  width: 400px;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #D51D1D;
+}
+
+#bark h1 {
+  font-family: 'Avenir Next', 'Avenir', 'Helvetica Neue', Helvetica, FreeSans, Arial, sans-serif;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  font-size: 1.25em;
+  margin: 0;
+  padding: 0.66em;
+}
+
+em {
+  font-style: normal;
+}
