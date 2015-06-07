@@ -130,6 +130,15 @@ $(function() {
     console.log('%c YAP YAP', "color: red; font-size: 4em; font-family: 'Comic Sans MS', cursive;");
   });
 
+  /* thx trevor <3 */
+
+  cheet('a w o o u u', function () {
+    $('#bark').css('display', 'none');
+    $('body').css('background-image', 'url(\'http://i.imgur.com/LYo9BA7.jpg\')');
+    $('body').css('background-size', 'cover');
+    console.image("http://i.imgur.com/RjkSrzJ.png");
+  });
+
   /* Sinful noises */
   /* I am hireable and a professional */
 
