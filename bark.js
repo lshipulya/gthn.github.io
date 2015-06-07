@@ -68,6 +68,22 @@ $(function() {
     console.log('%c GRRRRRRRRRRR', "color: red; font-size: 4em; font-family: 'Comic Sans MS', cursive;");
   });
 
+  /* thx nidai */
+
+  cheet('y e l p', function () {
+    $('#bark').css('display', 'none');
+    $('body').css('background-image', 'url(\'http://i.imgur.com/zRfBaHb.jpg\')');
+    $('body').css('background-size', 'cover');
+    console.log('%c YELP!', "color: red; font-size: 4em; font-family: 'Comic Sans MS', cursive;");
+  });
+
+  cheet('w a n w a n', function () {
+    $('#bark').css('display', 'none');
+    $('body').css('background-image', 'url(\'http://i.imgur.com/KWZhgGV.jpg\')');
+    $('body').css('background-size', 'cover');
+    console.log('%c ワンワン', "color: red; font-size: 4em; font-family: 'Comic Sans MS', cursive;");
+  });
+
   /* Cats */
 
   cheet('m e o w', function () {
