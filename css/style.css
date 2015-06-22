@@ -1,0 +1,52 @@
+body {
+  background-color: #EFEFEF;
+  font-family: "Source Sans Pro", "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+strong {
+  font-weight: 600;
+}
+
+object {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20vh;
+}
+
+div.word {
+  margin: 0 auto;
+}
+
+div.words {
+  width: 700px;
+  margin: 7.5vh auto;
+  font-size: 1.2em;
+}
+
+div.words > div {
+  width: 300px;
+  padding: 25px;
+  line-height: 1.5;
+  opacity: 0;
+}
+
+div.left {
+  float: left;
+}
+
+div.right {
+  float: right;
+}
+
+div.left a {
+  color: #D51D1D;
+}
+
+div.right a {
+  display: inline-block;
+  border: 1px solid #D51D1D;
+  border-radius: 5px;
+  padding: 3px 8px;
+  text-decoration: none;
+  color: #D51D1D;
+}

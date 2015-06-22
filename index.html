@@ -1,29 +1,53 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title>Adam Lewes</title>
     <meta name="description" content="I make stuff for screens.">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <!-- Stroke animation -->
+    <script src="../bower_components/vivus/dist/vivus.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
+    <!-- Easter egg -->
     <script src="https://cdn.rawgit.com/namuol/cheet.js/master/cheet.min.js" type="text/javascript"></script>
-    <script src="./console.image.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="./stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
-    <script src="./bark.js" type="text/javascript"></script>
+    <script src="../console.image.min.js" type="text/javascript"></script>
+    <script src="../bark.js" type="text/javascript"></script>
+    <!-- Styling -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <script>
-    $(function() {
+    $( document ).ready(function() {
+      // I have seen hell and it is in setTimeout();
+      // I nested them for comedic effect.
       setTimeout(function() {
-        $('#bark').css('opacity', '1');
-        $('#bark').addClass('animated fadeInUp');
-      }, 5000);
-    });
+          new Vivus('word', {type: 'oneByOne', duration: 200, file: '../wordmark.svg'});
+          setTimeout(function() {
+            $('.left').addClass('animated fadeInUp');
+            setTimeout(function() {
+              $('.right').addClass('animated fadeInUp');
+            }, 250);
+          }, 4000);
+        }, 500);
+      });
     </script>
   </head>
   <body>
+    <div class="container">
+    <div id="word"></div>
+      <div class="words">
+        <div class="left">
+          <p><strong>I make good-looking things for screens.</strong> Currently working on design for <a href="http://intui.github.io/">Intui</a> and news for <a href="http://waggnews.com/">World Aggregate News</a>.
+        </div>
+        <div class="right">
+          <p>Here I am elsewhere:</p>
+          <a class="butt" href="https://twitter.com/adamlewes">Twitter</a>
+          <a class="butt" href="http://adma.co/">Tumblr</a>
+          <a class="butt" href="https://instagram.com/adamlewes">Instagram</a>
+        </div>
+      </div>
+    </div>
     <!-- ADN verification because I'm awful -->
     <a href='https://alpha.app.net/whoa' rel='me'></a>
-    <div id="bark">
-      <h1>Tip: Type in <em>dog</em> noises.</h1>
-    </div>
   </body>
 </html>
