@@ -50,3 +50,34 @@ div.right a {
   text-decoration: none;
   color: #D51D1D;
 }
+
+.hiatus {
+  pointer-events: none;
+  position: relative;
+}
+
+.hiatus:before {
+  display: block;
+  z-index: 0;
+  position: absolute;
+  content: "";
+  width: 24px;
+  border-radius: 5px;
+  height: 82px;
+  right: 30px;
+  transform: rotate(-116deg);
+  bottom: -24px;
+  left: 24px;
+  background-color: #D51D1D;
+}
+
+.hiatus:after {
+  content: "ON HIATUS";
+  display: block;
+  z-index: 1;
+  position: absolute;
+  font-size: 9pt;
+  transform: rotate(-27deg);
+  top: 8px;
+  color: white;
+}
