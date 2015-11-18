@@ -6,8 +6,8 @@ body {
 #desktop, #mobile, #other {
   display: none;
   text-align: center;
-  line-height: 1.2;
-  margin-top: 25px; }
+  line-height: 1.3;
+  margin-top: 8px; }
 
 #other {
   font-size: 60%;
