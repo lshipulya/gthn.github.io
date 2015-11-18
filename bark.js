@@ -1,10 +1,10 @@
 /*
 
-Bark.js 1.0
+Bark.js 1.1
 A revolution in dog noises.
 
-Adam Lewes, 2015.
-Under the Apache license.
+Adam, 2015.
+Under the MIT License.
 
 */
 
@@ -68,7 +68,42 @@ $(function() {
     console.log('%c GRRRRRRRRRRR', "color: red; font-size: 4em; font-family: 'Comic Sans MS', cursive;");
   });
 
-  /* thx nidai */
+  cheet('s n a r l', function () {
+    $('.container').css('display', 'none');
+    $('body').css('background-image', 'url(\'https://media.giphy.com/media/XkxfezUB7Rj4k/giphy.gif\')');
+    $('body').css('background-size', 'cover');
+    console.log('%c SNARRRRLLL', "color: red; font-size: 4em; font-family: 'Comic Sans MS', cursive;");
+  });
+
+  cheet('b o w w o w', function () {
+    $('.container').css('display', 'none');
+    $('body').css('background-image', 'url(\'https://media.giphy.com/media/hB4MAjPelye8o/giphy.gif\')');
+    $('body').css('background-size', 'cover');
+    console.log("%c isn't that a rapper", "color: red; font-size: 4em; font-family: 'Comic Sans MS', cursive;");
+  });
+
+  cheet('b o w o w', function () {
+    $('.container').css('display', 'none');
+    $('body').css('background-image', 'url(\'https://media.giphy.com/media/hB4MAjPelye8o/giphy.gif\')');
+    $('body').css('background-size', 'cover');
+    console.log("%c isn't that a rapper", "color: red; font-size: 4em; font-family: 'Comic Sans MS', cursive;");
+  });
+
+  cheet('p a n t', function () {
+    $('.container').css('display', 'none');
+    $('body').css('background-image', 'url(\'https://media.giphy.com/media/nQ8XtX3ctBCkE/giphy.gif\')');
+    $('body').css('background-size', 'cover');
+    console.log("%c isn't that a rapper", "color: red; font-size: 4em; font-family: 'Comic Sans MS', cursive;");
+  });
+
+  cheet('y o w l', function () {
+    $('.container').css('display', 'none');
+    $('body').css('background-image', 'url(\'https://media.giphy.com/media/Hgty04S1x8yhG/giphy.gif\')');
+    $('body').css('background-size', 'cover');
+    console.log("%c isn't that a rapper", "color: red; font-size: 4em; font-family: 'Comic Sans MS', cursive;");
+  });
+
+  /* thx bark */
 
   cheet('y e l p', function () {
     $('.container').css('display', 'none');
@@ -77,7 +112,10 @@ $(function() {
     console.log('%c YELP!', "color: red; font-size: 4em; font-family: 'Comic Sans MS', cursive;");
   });
 
-  cheet('w a n w a n', function () {
+  /* fuck undertale */
+  /* and NOT in an untertail-y way */
+
+  cheet('w a n', function () {
     $('.container').css('display', 'none');
     $('body').css('background-image', 'url(\'http://i.imgur.com/KWZhgGV.jpg\')');
     $('body').css('background-size', 'cover');
@@ -139,16 +177,15 @@ $(function() {
     console.image("http://i.imgur.com/RjkSrzJ.png");
   });
 
-  /* Sinful noises */
-  /* I am hireable and a professional */
+  /* well, somebody's gonna type these */
 
   cheet('y i f f', function () {
-    alert("Go to church.");
-    console.log('%c PLEASE FIND RELIGION', "color: red; font-size: 4em; font-family: 'Comic Sans MS', cursive;");
+    alert("Please love yourself.");
+    console.log('%c LOVE YOURSELF', "color: red; font-size: 4em; font-family: 'Comic Sans MS', cursive;");
   });
 
   cheet('m u r r', function () {
-    alert("Stop sinning.");
-    console.log('%c PLEASE FIND RELIGION', "color: red; font-size: 4em; font-family: 'Comic Sans MS', cursive;");
+    alert("That is so sad honestly.");
+    console.log('%c SO UPSETTING', "color: red; font-size: 4em; font-family: 'Comic Sans MS', cursive;");
   });
 });

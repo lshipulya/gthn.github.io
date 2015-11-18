@@ -1,0 +1,27 @@
+body {
+  font-family: "Work Sans", "Avenir Next", "Avenir", "Helvetica Neue", sans-serif;
+  font-size: 4rem;
+  padding: 25px; }
+
+#desktop, #mobile, #other {
+  display: none;
+  text-align: center;
+  line-height: 1.2;
+  margin-top: 25px; }
+
+#other {
+  font-size: 60%;
+  line-height: 1; }
+
+.promo {
+  display: inline-block;
+  padding: 12px 18px;
+  margin: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #FF0000;
+  color: white;
+  font-size: 1.5rem; }
+  .promo a {
+    color: white; }
