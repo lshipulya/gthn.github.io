@@ -13,7 +13,7 @@ var dogGIFs = ["http://i.imgur.com/5eI6Ltz.gif", "http://i.imgur.com/udS6bf9.gif
 
 window.onload = function() {
   var shook = new Shake({
-    threshold: 36
+    threshold: 15
   });
   shook.start();
   window.addEventListener('shake', shakeEventDidOccur, false);
