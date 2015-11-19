@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <title>Adam!</title>
-    <meta name="description" content="Thing-doer.">
+    <meta name="description" content="Dogs!">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:500,700' rel='stylesheet' type='text/css'>
     <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/icons.css" rel="stylesheet">
     <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
@@ -22,21 +23,63 @@
       var md = new MobileDetect(window.navigator.userAgent);
       $(function() {
         if (md.mobile() == null) {
-          $('#desktop').css('display', 'block');
-          $('#other').css('display', 'block');
+          $('#desktop').css('visibility', 'visible');
         } else {
-          $('#mobile').css('display', 'block');
-          $('#other').css('display', 'block');
+          $('#mobile').css('visibility', 'visible');
         }
       });
+
+      $(function() {
+        $('span.abutt').click(function() {
+          $('div.about').css('visibility', 'visible');
+        });
+
+        $('span.icon-cross').click(function() {
+          $('div.about').css('visibility', 'hidden');
+        });
+      });
+
     </script>
   </head>
   <body>
     <div class="container">
-      <p id="desktop">Type dog noises.</p>
-      <p id="mobile">Shake your device.</p>
-      <p id="other">TRUST ME.</p>
+      <span id="desktop">Type dog noises.</span>
+      <span id="mobile">Shake your device.</span>
     </div>
-    <p class="promo">By <a href="https://twitter.com/helloadma/">@helloadma</a></p>
+
+    <span class="abutt">About</span>
+
+    <div class="about">
+      <div class="burr">
+        <span class="icon-cross"></span>
+      </div>
+      <div class="texts">
+
+        <div class="here">
+          <h1>adma.co</h1>
+          <p>By <a href="https://twitter.com/helloadma">@helloadma</a>.</p>
+        </div>
+
+        <h2>Why did you make this?</h2>
+        <p>Uh, dogs.</p>
+
+        <h2>How does it work?</h2>
+        <p>Really bad JavaScript, for the most part. Well, the parts <em>I</em> wrote are bad.</p>
+
+        <h2>What is this powered by?</h2>
+        <ul>
+          <li><strong>Shake detection</strong> uses Alex Gibson's wonderful <a href="https://github.com/alexgibson/shake.js/">shake.js</a>.</li>
+          <li><strong>Mobile detection</strong> is powered by the pretty damn great <a href="https://github.com/hgoebl/mobile-detect.js">mobile-detect.js</a> by Heinrich Goebl.</li>
+          <li><strong>Dog word detection</strong> is powered by the frickin' cool <a href="https://github.com/namuol/cheet.js">cheet.js</a> by Louis Acresti.</li>
+          <li><strong>Image-in-console wizardry</strong> is powered by the nice as heck <a href="https://github.com/adriancooney/console.image">console.image</a> by Adrian Cooney.</li>
+          <li>Also, <a href="https://jquery.com/">jQuery</a>, because obviously.</li>
+        </ul>
+
+        <h2>Did you really need that many scripts?</h2>
+        <p>I don't know jack shit about JavaScript.</p>
+        <p>I just love dogs.</p>
+
+      </div>
+    </div>
   </body>
 </html>
