@@ -1,6 +1,6 @@
 /*
 
-Woof.js 1.0
+Woof.js 1.0.1
 Dogs, on the go.
 
 Adam, 2015.
@@ -13,7 +13,8 @@ var dogGIFs = ["http://i.imgur.com/5eI6Ltz.gif", "http://i.imgur.com/udS6bf9.gif
 
 window.onload = function() {
   var shook = new Shake({
-    threshold: 15
+    threshold: 7
+    timeout: 750
   });
   shook.start();
   window.addEventListener('shake', shakeEventDidOccur, false);
