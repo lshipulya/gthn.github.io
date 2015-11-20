@@ -21,7 +21,12 @@ span.abutt {
   right: 0;
   background: #FF0000;
   color: white;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer; }
   span.abutt a {
     color: white; }
 
@@ -51,6 +56,7 @@ div.about {
     border-top-right-radius: 4px; }
     div.about div.burr .icon-cross {
       position: absolute;
+      cursor: pointer;
       right: 5px;
       top: 2px;
       margin: 0; }
