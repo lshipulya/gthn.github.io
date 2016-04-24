@@ -1,6 +1,6 @@
 /*
 
-Woof.js 1.0.1
+Woof.js Dog.0
 Dogs, on the go.
 
 Adam, 2015.
